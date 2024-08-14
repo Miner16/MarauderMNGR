@@ -1,8 +1,9 @@
 # MarauderMNGR
 
 MarauderMNGR is a console / UI for the WiFi marauder, it allows you to use Marauder without a Flipper Zero or screen. It connects to your phone using its own WiFi.
-
 This has a couple of benefits over using a TFT display or a Flipper Zero, It's less suspicious in a public space, less bulky, easier to use, and way faster to type on compared to a Flipper.
+
+The UI consist of a text box which displays all incoming serial data (up to 30 lines then the old ones get cut off), a text box to input commands, and below that are quick action buttons for prewritten commands.
 
 
 ### Needed stuff:
