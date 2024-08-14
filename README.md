@@ -12,7 +12,7 @@ Another with MarauderMNGR installed
 
 
 Connect them like this:
-5V-5V
-GND-GND
-RX-TX
-TX-RX
+*5V-5V
+*GND-GND
+*RX-TX
+*TX-RX
