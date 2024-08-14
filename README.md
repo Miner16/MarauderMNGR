@@ -1,18 +1,17 @@
 # MarauderMNGR
 Wireless UI for WiFi Marauder
 
+MarauderMNGR is a console / UI for the WiFi marauder, it allows you to use Marauder without a Flipper Zero or screen. It connects to your phone using its own WiFi.
 
-This is a console / UI for the WiFi marauder. This allows you to use Marauder without a Flipper Zero or screen. It connects to your phone using its own WiFi.
 
-
-You need 2 ESP32 modules for this:
-
-One with Marauder installed
-Another with MarauderMNGR installed
+Needed stuff:
+- ESP32 X2
+- 4 JUMPER WIRES
+- COMPUTER TO FLASH THE ESP'S
 
 
 Connect them like this:
-*5V-5V
-*GND-GND
-*RX-TX
-*TX-RX
+- 5V-5V
+- GND-GND
+- RX-TX
+- TX-RX
