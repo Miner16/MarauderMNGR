@@ -1,30 +1,26 @@
 #include <WiFi.h>
 #include <WebServer.h>
-
 const char* ssid = "Manager";
 const char* password = "marauder";
 
 WebServer server(80);
-
 String receivedText = "";
 
-// Maximum number of lines in receivedText
+// max nr of lines in the ui
 const int maxLines = 30;
 
 void setup() {
   Serial.begin(115200);
   delay(1000);
 
-  // Manually assign IP address, subnet mask, and gateway
+  // networking
   IPAddress ip(10, 10, 1, 1);
   IPAddress subnet(255, 255, 255, 0);
   IPAddress gateway(10, 10, 1, 1);
   WiFi.softAPConfig(ip, gateway, subnet);
-
-  // Configure ESP32 as Access Point
   WiFi.softAP(ssid, password);
 
-  // Setup routes
+  // html
   server.on("/", HTTP_GET, []() {
     String html = "<style>body{text-align:center;}</style>";
     html += "<div style='border: 1px solid black; padding: 10px; margin-bottom: 10px; text-align: left; display: inline-block;'>";
@@ -65,7 +61,7 @@ void setup() {
 void loop() {
   server.handleClient();
 
-  // Check for incoming serial data
+  // check for incoming serial data
   while (Serial.available()) {
     char c = Serial.read();
     if (c == '\n') {
@@ -84,7 +80,7 @@ void loop() {
   }
 }
 
-// Function to count the number of lines in a string
+// line counter
 int countLines(String text) {
   int count = 0;
   int index = -1;
