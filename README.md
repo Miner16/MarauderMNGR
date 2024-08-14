@@ -14,3 +14,5 @@ MarauderMNGR is a console / UI for the WiFi marauder, it allows you to use Marau
 - GND-GND
 - RX-TX
 - TX-RX
+
+![image](https://github.com/user-attachments/assets/6c680426-2d76-4f4f-8eb0-b432d7d37618)
