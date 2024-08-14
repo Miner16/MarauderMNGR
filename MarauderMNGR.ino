@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <WebServer.h>
 
-const char* ssid = "#Telia-F5B748";
-const char* password = "monopoly";
+const char* ssid = "Manager";
+const char* password = "marauder";
 
 WebServer server(80);
 
